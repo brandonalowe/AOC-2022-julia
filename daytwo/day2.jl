@@ -40,7 +40,7 @@ function calculate_score_part_1(strat_guide::Vector{String}, grading)
     return score
 end
 
-contents = open("./daytwo/guide.txt");
+contents = open("./daytwo/guide.txt", "r");
 strat_guide = readlines(contents);
 grading = Dict(
     [("X", 1), 
